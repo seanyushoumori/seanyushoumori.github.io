@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climbing</title>
+    <title>My Music Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,27 +16,25 @@
             text-align: center;
         }
 
-        img1 {
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
             max-width: 100%;
             height: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 100%; /* Set a specific width for the image */
-            max-width: 600px
-            display: block; /* Remove any extra spacing below the image */
+            display: block;
             margin-left: auto;
             margin-right: auto;
         }
-        img2 {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 100%; /* Set a specific width for the image */
-            max-width: 900px
-            display: block; /* Remove any extra spacing below the image */
-            margin-left: auto;
-            margin-right: auto;
+
+        #img1 {
+            max-width: 600px; /* Adjust this value for the first image */
+        }
+
+        #img2 {
+            max-width: 800px; /* Adjust this value for the second image */
         }
 
         a {
@@ -51,11 +49,14 @@
 </head>
 <body>
 
-    <!-- Add more content related to your music page as needed -->
-
-    <img1 src="https://github.com/seanyushoumori/seanyushoumori.github.io/blob/main/JBR_8897.jpg?raw=true" alt="Plumber's Crack">
+    <div class="image-container">
+        <img id="img1" src="https://github.com/seanyushoumori/seanyushoumori.github.io/blob/main/JBR_8897.jpg?raw=true">
+    </div>
     <h1><i>Plumber's Crack</i>, Red Rocks</h1>
-    <img2 src="https://github.com/seanyushoumori/seanyushoumori.github.io/blob/main/IMG_9763.jpg?raw=true" alt="Atari">
+
+    <div class="image-container">
+        <img id="img2" src="https://github.com/seanyushoumori/seanyushoumori.github.io/blob/main/IMG_9763.jpg?raw=true">
+    </div>
     <h1><i>Atari</i>, Bishop</h1>
 
 </body>
