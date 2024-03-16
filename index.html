@@ -3,40 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Sean</title>
+    <title>Sean's Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
         }
 
-        h1, p {
-            color: #333;
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
         }
 
         a {
-            color: #007BFF;
-            text-decoration: none;
+            color: black;
+            text-decoration: underline;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: blue;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 10px;
+            }
         }
     </style>
 </head>
 <body>
-
-    <h1>Hi! I'm Sean.</h1>
-    <p>I'm a senior at Stanford University pursuing a bachelors in math and a masters in CS. I love learning how the internet works,
-        and currently do web security research at <a href="https://esrg.stanford.edu/" target="_blank">ESRG.</a> Previously I did full-stack engineering
-        for aphrodite.io and physics research at <a href="https://kipac.stanford.edu/" target="_blank">Kipac.</a></p>
-
-    <p>
-        <span>Interests: </span>
-        <a href="https://seanyushoumori.github.io/climbing" target="_blank">Climbing</a>
-        <a href="https://your-music-link.com" target="_blank">Music</a>
-    </p>
-
+    <div class="container">
+        <h1>Hi! I'm Sean.</h1>
+        <p>I'm a senior at Stanford University pursuing a bachelor's in math and a master's in CS. I love learning how the internet works,
+            and currently do web security research at <a href="https://esrg.stanford.edu/" target="_blank">ESRG.</a> Previously I did full-stack engineering
+            for aphrodite.io and physics research at <a href="https://kipac.stanford.edu/" target="_blank">Kipac</a>, and am an incoming intern at Akamai.</p>
+        <p>
+            <span>Interests: </span>
+            <a href="https://seanyushoumori.github.io/climbing" target="_blank">Climbing</a>
+            <a href="https://your-music-link.com" target="_blank">Music</a>
+        </p>
+    </div>
 </body>
 </html>
